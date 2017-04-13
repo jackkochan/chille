@@ -1,0 +1,24 @@
+[package]
+authors = ["Safe Exchange Developers <team@safex.io>"]
+description = "API implementations to various crypto exchanges and some automated systems"
+documentation = "http://chille.io/chille/latest"
+homepage = "http://chille.io"
+license = "GPL-3.0"
+name = "chille_network"
+readme = "README.md"
+repository = "https://github.com/safex/chille"
+version = "0.0.1"
+
+[dependencies]
+futures = "0.1"
+tokio-core = "0.1"
+tokio-timer = "0.1"
+tokio-io = "0.1"
+
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+getopts = "0.2"
+rand = "0.3"
+
+uuid = { version = "0.4", features = ["serde", "v4"] }
