@@ -1,0 +1,15 @@
+sudo: required
+dist: trusty
+language: rust
+branches:
+  only:
+  - master
+matrix:
+  include:
+  - rust: stable
+script:
+  - echo 'Building release mode'
+  - cargo build --release
+env:
+  global:
+  - RUST_BACKTRACE=1

@@ -1,6 +1,6 @@
 [package]
-authors = ["Safe Exchange Developers <team@safex.io>"]
-description = "API implementations to various crypto exchanges and some automated systems"
+authors = ["Safex Developers <team@safex.io>"]
+description = "Chille Blockchain reference implementation"
 documentation = "http://chille.io/chille/latest"
 homepage = "http://chille.io"
 license = "GPL-3.0"
@@ -21,4 +21,11 @@ serde_derive = "0.9"
 getopts = "0.2"
 rand = "0.3"
 
+p2p = { path = "p2p" }
+
+
 uuid = { version = "0.4", features = ["serde", "v4"] }
+
+[[bin]]
+path = "cbc/main.rs"
+name = "cbc"
